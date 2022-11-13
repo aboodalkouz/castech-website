@@ -30,6 +30,7 @@ $(document).ready(function () {
             duration: 500
         });
         setProgressBar(++current);
+        $("html, body").animate({ scrollTop: 0 }, "fast");
     });
   
     $(".previous-step").click(function () {
