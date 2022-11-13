@@ -19,6 +19,7 @@ from users.views import register_request as std_hp
 from users.views import logout_request as stdlg
 from CastsTypes.views import request_view as request
 from CastsTypes.views import upload_file as requestu
+from CastsTypes.views import choose as requestc
 
 urlpatterns = [
     path('', std_hp),
@@ -26,7 +27,8 @@ urlpatterns = [
     path('logout/', stdlg),
     path('admin/', admin.site.urls),
     path('order/', request,name='request_a_cast'),
-    path('upload/', requestu,name='uploadACsv')
+    path('upload/', requestu,name='uploadACsv'),
+    path('choose/', requestc,name='choose')
 
 
 ]
